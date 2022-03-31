@@ -1,41 +1,69 @@
-.fondo {
+/**********************************/
+
+
+/********** Configs ***************/
+
+
+/**********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     background-color: #333333;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width:991px) {
+    .mid {
+        align-items: center;
+    }
 }
 
 
 /**********************************/
 
 
-/********** Top News CSS **********/
+/** Conjunto imagenes noticias ****/
 
 
 /**********************************/
 
-.top-news {
+.news {
     position: relative;
     width: 100%;
     padding: 30px 0 0 0;
 }
 
-.top-news .col-md-6 {
+.news .col-md-6 {
     margin-bottom: 30px;
 }
 
-.top-news .tn-img {
+.news .img-news {
     position: relative;
     overflow: hidden;
 }
 
-.top-news .tn-img img {
+.news .img-news img {
     width: 100%;
 }
 
-.top-news .tn-img:hover img {
+.news .img-news:hover img {
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
 
-.top-news .tn-content {
+.news .contenido-news {
     position: absolute;
     top: 0;
     right: 0;
@@ -47,7 +75,7 @@
     align-items: flex-end;
 }
 
-.top-news .tn-content a.tn-date {
+.news .contenido-news a.fecha-news {
     display: block;
     width: 100%;
     margin-bottom: 5px;
@@ -58,15 +86,15 @@
     letter-spacing: 1px;
 }
 
-.top-news .tn-content a.tn-date i {
+.news .contenido-news a.fecha-news i {
     margin-right: 5px;
 }
 
-.top-news .tn-content a.tn-date:hover {
+.news .contenido-news a.fecha-news:hover {
     text-decoration: underline;
 }
 
-.top-news .tn-content a.tn-title {
+.news .contenido-news a.titulo-news {
     display: block;
     width: 100%;
     color: #ffffff;
@@ -75,12 +103,12 @@
     transition: .3s;
 }
 
-.top-news .tn-left .tn-content a.tn-title {
+.news .news-left.contenido-news a.titulo-news {
     font-size: 35px;
     font-weight: 700;
 }
 
-.top-news .tn-content a.tn-title:hover {
+.news .contenido-news a.titulo-news:hover {
     color: #E47A2E;
 }
 
@@ -88,7 +116,7 @@
 /**********************************/
 
 
-/********** Footer **********/
+/********** Footer ****************/
 
 
 /**********************************/
@@ -151,24 +179,6 @@
     display: inline-block
 }
 
-.site-footer .social-icons {
-    text-align: right
-}
-
-.site-footer .social-icons a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 6px;
-    margin-right: 0;
-    border-radius: 100%;
-    background-color: #33353d
-}
-
-.copyright-text {
-    margin: 0
-}
-
 @media (max-width:991px) {
     .site-footer [class^=col-] {
         margin-bottom: 30px
@@ -179,8 +189,199 @@
     .site-footer {
         padding-bottom: 0
     }
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
+    .site-footer .copyright-text {
+        text-align: center;
     }
+}
+
+.borde {
+    border-radius: .4rem;
+}
+
+
+/**********************************/
+
+
+/********** Login ***************/
+
+
+/**********************************/
+
+.svg_login:hover {
+    color: black;
+    fill: black;
+    cursor: pointer;
+}
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.container_login {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+.wrapper {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px #212529;
+}
+
+.wrapper .titulo {
+    height: 90px;
+    background: #212529;
+    border-radius: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_derecha {
+    padding-left: 29rem;
+    padding-top: 10px;
+    background-color: #212529;
+    border-radius: 0;
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #282928;
+    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+form .row input::placeholder {
+    color: #999;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #282928;
+    border: 1px solid #282928;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #282928;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #212529;
+    border: 1px solid #212529;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background: #131518;
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a {
+    color: #282928;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+/**********************************/
+
+
+/********** Contacto **************/
+
+
+/**********************************/
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }

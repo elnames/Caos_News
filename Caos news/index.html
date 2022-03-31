@@ -6,227 +6,322 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caos news</title>
+    <link rel="icon" href="/media/logo1.png">
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body class="fondo">
-
+<body>
     <!-- Inicio nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/media/logo.png" alt="" width="75" height="70" class="d-inline-block align-text-top"></a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="/media/logo2.png" alt="" width="260" height="50" class="d-inline-block"></a>
+            <!-- Logo -->
+
+            <!-- Boton responsive -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Boton responsive -->
+
+            <div class="collapse navbar-collapse mid" id="navbarSupportedContent">
+                <!-- Items Izquierda -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mid">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="/html/login1.html">Periodistas</a>
                     </li>
+
+                    <!-- Categorias -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
+                            Categorias
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Ciencia</a></li>
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <li><a class="dropdown-item" href="#">Internacional</a></li>
+                            <li><a class="dropdown-item" href="#">Viajes</a></li>
+                            <li><a class="dropdown-item" href="#">Politica</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="index.html">Contacto</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+                    <!-- Fin Categorias -->
                 </ul>
+                <!-- Fin items Izquierda -->
 
+                <!-- Items derecha -->
                 <form class="d-flex">
-                    <input class="form-control m-1 bg-dark text-white" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary ms-3 me-2  " type="submit">Buscar</button>
-                    <button type="button" class="btn btn-secondary btn-sm"><a class="text-decoration-none link-light" href="/html/Login.html">Iniciar sesión</a></button>
+                    <!-- Buscador -->
+                    <input class="form-control m-2 bg-dark mt-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-secondary  h-25 mt-2  " type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                        </svg>
+                    </button>
+                    <!-- Fin Buscador -->
 
+                    <!-- Boton login -->
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="pe-2 mt-1 ps-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle svg_login " width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path  stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle  cx="12" cy="12" r="9"/>
+                        <circle  cx="12" cy="10" r="3"/>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                      </svg>
+                    </a>
+                    <!-- Fin boton login -->
                 </form>
+                <!-- Fin items derecha -->
             </div>
         </div>
     </nav>
     <!-- Fin nav bar -->
-
-    <!-- INICIO carrusel -->
-    <div class="container mt-5">
+    <!-- Inicio carrusel -->
+    <div class="container mt-3">
         <div class="row">
             <div class="col align-self-center">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active ">
-                            <img src="/media/elon.jpg" class="d-block w-100" width="800" height="450" alt="...">
+
+                        <!-- 1ra imagen Carousel -->
+                        <div class="carousel-item active">
+                            <img src="/media/noticia2.jpg " class="d-block w-100 borde " width="800 " height="450 " alt="... ">
                             <div class="carousel-caption d-none d-md-block ">
                                 <h5>Elon Musk </h5>
                                 <p>“bajo la línea de la pobreza”: Así es la casa de 35 m2 en la que vive.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="/media/REDMI11PRO.png" class="d-block w-100" width="800" height="450" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
+                        <!-- Fin 1ra imagen Carousel -->
+
+                        <!-- 2da imagen Carousel -->
+                        <div class="carousel-item ">
+                            <img src="/media/noticia3.jpg " class="d-block w-100 borde " width="800 " height="450 " alt="... ">
+                            <div class="carousel-caption d-none d-md-block ">
                                 <h5>XIAOMI</h5>
                                 <p>El famoso Redmi Note 11 de Xiaomi ya están disponibles en Chile.
                                 </p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="/media/Amogus.png" class="d-block w-100" width="800" height="450" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
+                        <!-- Fin 2da imagen Carousel -->
+
+                        <!-- 3ra imagen Carousel-->
+                        <div class="carousel-item ">
+                            <img src="/media/noticia5.jpg " class="d-block w-100 borde " width="800 " height="450 " alt="... ">
+                            <div class="carousel-caption d-none d-md-block ">
                                 <h5>ITS</h5>
                                 <p>Chilenos crean test de orina que detecta infecciones de transmisión sexual</p>
                             </div>
                         </div>
+                        <!-- Fin 3ra imagen Carousel -->
                     </div>
+
+                    <!-- Boton Carousel -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
 
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
+                    <!-- Fin Boton Carousel -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- FIN carrusel -->
+    <!-- Fin carrusel -->
 
-    <!-- Noticias-->
-    <div class="top-news">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 tn-left">
-                    <div class="tn-img">
-                        <img src="/media/Amogus.png" />
-                        <div class="tn-content">
-                            <div class="tn-content-inner">
-                                <a class="tn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
-                                <a class="tn-title" href="">Lorem ipsum dolor sit amet adipiscing elit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 tn-right">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/media/Amogus.png" />
-                                <div class="tn-content">
-                                    <div class="tn-content-inner">
-                                        <a class="tn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
-                                        <a class="tn-title" href="">Integer faucibus pharetra odio</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/media/Amogus.png" />
-                                <div class="tn-content">
-                                    <div class="tn-content-inner">
-                                        <a class="tn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
-                                        <a class="tn-title" href="">Nulla vitae pharetra ligula</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/media/Amogus.png" />
-                                <div class="tn-content">
-                                    <div class="tn-content-inner">
-                                        <a class="tn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
-                                        <a class="tn-title" href="">Ut ac euismod tellus a blandit</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="tn-img">
-                                <img src="/media/Amogus.png" />
-                                <div class="tn-content">
-                                    <div class="tn-content-inner">
-                                        <a class="tn-date" href=""><i class="far fa-clock"></i>05-Feb-2020</a>
-                                        <a class="tn-title" href="">Cras ac egestas sem nec euismod</a>
-                                    </div>
+    <!-- Widget  -->
+    <div class="container mt-3">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
+    </div>
+    <!--Fin Widget  -->
+
+
+    <!-- 2 Noticias grandes-->
+    <div class="container">
+        <div class="news ">
+            <div class="container ">
+                <div class="row ">
+                    <!-- Noticia izquierda -->
+                    <div class="col news-left ">
+                        <div class="img-news borde ">
+                            <img src="/media/noticia.jpg " />
+                            <div class="contenido-news ">
+                                <div class="contenido-news-inner ">
+                                    <a class="fecha-news " href=" "><i class="far fa-clock "></i>07-Abr-2022</a>
+                                    <a class="titulo-news " href=" ">Última hora de la guerra en Ucrania</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Fin Noticia izquierda -->
+
+                    <!-- Noticias derecha -->
+                    <div class="col-md-6 tn-right ">
+                        <div class="img-news borde ">
+                            <img src="/media/noticia.jpg " />
+                            <div class="contenido-news ">
+                                <div class="contenido-news-inner ">
+                                    <a class="fecha-news " href=" "><i class="far fa-clock "></i>07-Abr-2022</a>
+                                    <a class="titulo-news " href=" ">Última hora de la guerra en Ucrania</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Noticias derecha -->
                 </div>
             </div>
         </div>
+
     </div>
-    <!-- Noticias-->
+    <!-- Fin 2 Noticias grandes-->
+
+    <!-- Noticias pequeñas -->
+
+    <div class="container">
+
+    </div>
+
+    <!-- FinNoticias pequeñas  -->
+
+    <!-- Contacto-->
+    <div class="container_login">
+        <div class="wrapper">
+            <div class="titulo">
+                <span>Contacto</span>
+            </div>
+            <form id="contact" action="" method="post">
+                <fieldset>
+                    <input placeholder="Nombre" type="text" tabindex="1">
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Email" type="email" tabindex="2">
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Telefono" type="tel" tabindex="3">
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <div class="row button">
+                        <input type="submit" value="Enviar">
+
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- Fin Contacto-->
+
 
 
 
     <!-- footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
+    <footer class="site-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 ">
                     <h6>Sobre nosotros</h6>
-                    <p class="text-justify">Caos news es un periódico chileno de circulación matutina. En la actualidad es uno de los periódicos de mayor circulación en Chile, y su sitio web es uno de los de mayor alcance a nivel de las regiones Región Metropolitana de Santiago
-                        y Región de Valparaíso.</p>
+                    <p class="text-justify ">Caos news es un noticiero chileno de circulación matutina. En la actualidad es uno de los noticieros de mayor circulación en Chile, y nuestro sitio web es uno de los de mayor alcance a nivel de de chile.
+                    </p>
                 </div>
 
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="#">Deportes</a></li>
-                        <li><a href="#">Tecnología</a></li>
-                        <li><a href="#">Politica</a></li>
-                        <li><a href="#">Internacional</a></li>
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links ">
+                        <li><a href="# ">Deportes</a></li>
+                        <li><a href="# ">Tecnología</a></li>
+                        <li><a href="# ">Política</a></li>
+                        <li><a href="# ">Internacional</a></li>
                     </ul>
                 </div>
 
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3 ">
                     <h6>Atajos</h6>
                     <ul class="footer-links">
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Contactanos</a></li>
-                        <li><a href="#">Ayudanos</a></li>
-                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="/index.html">Contactanos</a></li>
+                        <li><a href="# ">Periodistas</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2022 Todos los derechos reservados por
-                        <a href="#">CAOS NEWS</a>.
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                    <p class="copyright-text ">Copyright &copy; 2022 Todos los derechos reservados por
+                        <a href="# ">CAOS NEWS</a>.
                     </p>
                 </div>
             </div>
     </footer>
-    <!-- footer -->
+    <!-- Fin footer -->
 
+    <!-- Login-->
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="btn_derecha">
+                        <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+                    <div class="titulo">
+                        <span>Sesión</span>
+                    </div>
+                    <div class="btn_derecha"></div>
+                    <form>
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Email">
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+
+                        <div class="pass"><a href="#">¿Olvidó la contraseña?</a></div>
+
+                        <div class="row button">
+                            <input type="submit" value="Iniciar">
+                        </div>
+
+                        <div class="signup-link">
+                            ¿Nuevo usuario?
+                            <a href="#">¡Registrate ahora!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin login -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 </body>
 
 </html>
