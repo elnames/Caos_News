@@ -8,8 +8,10 @@
     <title>Caos news</title>
     <link rel="icon" href="/media/logo1.png">
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/efca2f5eea.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -62,7 +64,7 @@
                 <!-- Items derecha -->
                 <form class="d-flex">
                     <!-- Buscador -->
-                    <input class="form-control m-2 bg-dark mt-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <input class="form-control m-2  mt-2 " type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-secondary  h-25 mt-2  " type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -73,7 +75,7 @@
                     <!-- Fin Buscador -->
 
                     <!-- Boton login -->
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="pe-2 mt-1 ps-4">
+                    <a data-bs-toggle="modal" href="#exampleModalToggle" class="pe-2 mt-1 ps-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle svg_login " width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path  stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle  cx="12" cy="12" r="9"/>
@@ -197,17 +199,63 @@
 
     </div>
     <!-- Fin 2 Noticias grandes-->
-
-
-    <!-- Noticias pequeñas -->
-    <!-- Fin noticias pequeñas  -->
-
     <!-- Widget cripto -->
-    <div class="container mt-3">
+    <div class="container mt-3 borde">
         <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
         <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
     </div>
     <!--Fin Widget cripto -->
+
+
+    <!-- Noticias pequeñas -->
+
+    <div class="container">
+        <h1 class="text-center pt-5">Noticias más vistas de la semana</h1>
+        <div class="row m-5">
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom" style="width: 18rem;">
+                    <a href="">
+                        <img src="/media/noticia5.jpg" class="card-img-top p-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news">Wate de wal esmid</p>
+                            <p class="fs-p"><i class="far fa-clock"></i>07-Abr-2022</p>
+                            <p class="card-text fs-p">tremendo wate le pegó al otro loco, yo creo que fue entero fuerte.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom" style="width: 18rem;">
+                    <a href="">
+                        <img src="/media/noticia1.jpg" class="card-img-top p-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news">Wate de wal esmid</p>
+                            <p class="fs-p"><i class="far fa-clock"></i>07-Abr-2022</p>
+                            <p class="card-text fs-p">tremendo wate le pegó al otro loco, yo creo que fue entero fuerte.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom" style="width: 18rem;">
+                    <a href="">
+                        <img src="/media/noticia2.jpg" class="card-img-top p-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news">Wate de wal esmid</p>
+                            <p class="fs-p"><i class="far fa-clock"></i>07-Abr-2022</p>
+                            <p class="card-text fs-p">tremendo wate le pegó al otro loco, yo creo que fue entero fuerte.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin noticias pequeñas  -->
+
+
+
 
 
 
@@ -252,9 +300,6 @@
     </a>
     <!-- Fin Contacto-->
 
-
-
-
     <!-- Footer -->
     <footer class="site-footer ">
         <div class="container ">
@@ -296,22 +341,27 @@
     </footer>
     <!-- Fin footer -->
 
-    <!-- Login-->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <!-- Login y Registro -->
+
+    <!-- Login -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="wrapper">
                     <div class="btn_derecha">
                         <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
+                    <!-- Titulo -->
                     <div class="titulo">
                         <span>Iniciar Sesión</span>
                     </div>
-                    <div class="btn_derecha"></div>
-                    <form>
+                    <!-- Fin titulo -->
 
+                    <div class="btn_derecha"></div>
+                    <!-- Formulario -->
+                    <form>
+                        <!-- Icono -->
                         <div class="container">
                             <div class="row mid">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -322,10 +372,11 @@
                                 </svg>
                             </div>
                         </div>
+                        <!-- Fin icono -->
 
                         <div class="row"></div>
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <i class="fa-regular fa-envelope"></i>
                             <input type="text" placeholder="Email" required>
                         </div>
 
@@ -342,16 +393,79 @@
 
                         <div class="signup-link">
                             ¿Nuevo usuario?
-                            <a href="#">¡Registrate ahora!</a>
+                            <a class="register" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">¡Registrate ahora!</a>
+                        </div>
+                    </form>
+                    <!-- Fin formulario -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Login -->
+
+    <!-- Registro -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="btn_derecha">
+                        <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="titulo">
+                        <span>Registro</span>
+                    </div>
+                    <div class="btn_derecha"></div>
+                    <form>
+
+                        <div class="container">
+                            <div class="row mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="9" />
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="row"></div>
+
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="row">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="Email" required>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="row button">
+                            <input type="submit" value="Registrarse">
+                        </div>
+
+                        <div class="signup-link">
+                            ¿Ya tienes cuenta?
+                            <a class="register" data-bs-toggle="modal" href="#exampleModalToggle"> Inicia Sesión</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Fin login -->
+    <!-- Registro -->
+
+    <!-- Fin Login y Registro -->
+
 
     <!-- Scripts -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 </body>
 

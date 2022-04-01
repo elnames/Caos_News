@@ -30,6 +30,11 @@ a {
     }
 }
 
+.zoom:hover {
+    transform: scale(1.01);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 
 /**********************************/
 
@@ -110,6 +115,14 @@ a {
 
 .news .contenido-news a.titulo-news:hover {
     color: #E47A2E;
+}
+
+.titulo-news:hover {
+    color: #E47A2E;
+}
+
+.fs-p {
+    font-size: 13px;
 }
 
 
@@ -202,14 +215,19 @@ a {
 /**********************************/
 
 
-/********** Login ***************/
+/********** Login y registro*******/
 
 
 /**********************************/
 
-.svg_login:hover {
+
+/* Puntero */
+
+.svg_login:hover,
+.register:hover {
     fill: black;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .modal-container {
