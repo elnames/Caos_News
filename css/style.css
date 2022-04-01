@@ -260,6 +260,24 @@ a {
     }
 }
 
+@media (max-width:440px) {
+    .btn_derecha {
+        padding-left: 22rem;
+        padding-top: 10px;
+        background-color: #212529;
+        border-radius: 0;
+    }
+}
+
+@media (max-width:390px) {
+    .btn_derecha {
+        padding-left: 21rem;
+        padding-top: 10px;
+        background-color: #212529;
+        border-radius: 0;
+    }
+}
+
 .wrapper form {
     padding: 30px 25px 25px 25px;
 }
