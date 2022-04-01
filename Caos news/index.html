@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <!-- Inicio nav bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -31,11 +32,9 @@
             <div class="collapse navbar-collapse mid" id="navbarSupportedContent">
                 <!-- Items Izquierda -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mid">
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/login1.html">Periodistas</a>
                     </li>
 
                     <!-- Categorias -->
@@ -44,7 +43,7 @@
                             Categorias
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ciencia</a></li>
+                            <li><a class="dropdown-item" href="/html/noticias.html">Ciencia</a></li>
                             <li><a class="dropdown-item" href="#">Deportes</a></li>
                             <li><a class="dropdown-item" href="#">Internacional</a></li>
                             <li><a class="dropdown-item" href="#">Viajes</a></li>
@@ -52,7 +51,8 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="index.html">Contacto</a></li>
+                            <li><a class="dropdown-item" href="">Periodistas</a></li>
+                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
                         </ul>
                     </li>
                     <!-- Fin Categorias -->
@@ -88,6 +88,12 @@
         </div>
     </nav>
     <!-- Fin nav bar -->
+
+    <!-- Clima bar -->
+    <div id="ww_f56cc8f9d8e8c" v='1.20' loc='id' a='{"t":"ticker","lang":"es","ids":["wl2784"],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'><a href="https://weatherwidget.org/es/" id="ww_f56cc8f9d8e8c_u" target="_blank">Widget de tiempo para el sitio web de Weatherwidget.org</a></div>
+    <script async src="https://srv2.weatherwidget.org/js/?id=ww_f56cc8f9d8e8c"></script>
+    <!-- Fin clima bar -->
+
     <!-- Inicio carrusel -->
     <div class="container mt-3">
         <div class="row">
@@ -149,12 +155,7 @@
     </div>
     <!-- Fin carrusel -->
 
-    <!-- Widget  -->
-    <div class="container mt-3">
-        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-        <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
-    </div>
-    <!--Fin Widget  -->
+
 
 
     <!-- 2 Noticias grandes-->
@@ -196,48 +197,64 @@
     </div>
     <!-- Fin 2 Noticias grandes-->
 
+
     <!-- Noticias pequeñas -->
+    <!-- Fin noticias pequeñas  -->
 
-    <div class="container">
-
+    <!-- Widget cripto -->
+    <div class="container mt-3">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
     </div>
+    <!--Fin Widget cripto -->
 
-    <!-- FinNoticias pequeñas  -->
+
+
 
     <!-- Contacto-->
-    <div class="container_login">
-        <div class="wrapper">
-            <div class="titulo">
-                <span>Contacto</span>
-            </div>
-            <form id="contact" action="" method="post">
-                <fieldset>
-                    <input placeholder="Nombre" type="text" tabindex="1">
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Email" type="email" tabindex="2">
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Telefono" type="tel" tabindex="3">
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
-                </fieldset>
-                <fieldset>
-                    <div class="row button">
-                        <input type="submit" value="Enviar">
+    <a name="contacto">
+        <div class="container_contacto">
+            <div class="wrapper">
+                <!-- Titulo contacto -->
+                <div class="titulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                    <span>Contacto</span>
+                </div>
+                <!-- Fin titulo contacto -->
 
-                    </div>
-                </fieldset>
-            </form>
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <input placeholder="Nombre" type="text" tabindex="1">
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Email" type="email" tabindex="2">
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Telefono" type="tel" tabindex="3">
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <div class="row button">
+                            <input type="submit" value="Enviar">
+
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-    </div>
+    </a>
     <!-- Fin Contacto-->
 
 
 
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="site-footer ">
         <div class="container ">
             <div class="row ">
@@ -260,7 +277,7 @@
                 <div class="col-xs-6 col-md-3 ">
                     <h6>Atajos</h6>
                     <ul class="footer-links">
-                        <li><a href="/index.html">Contactanos</a></li>
+                        <li><a href="#contacto">Contactanos</a></li>
                         <li><a href="# ">Periodistas</a></li>
                     </ul>
                 </div>
@@ -289,18 +306,31 @@
                     </div>
 
                     <div class="titulo">
-                        <span>Sesión</span>
+                        <span>Iniciar Sesión</span>
                     </div>
                     <div class="btn_derecha"></div>
                     <form>
+
+                        <div class="container">
+                            <div class="row mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="9" />
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="row"></div>
                         <div class="row">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Email" required>
                         </div>
 
                         <div class="row">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Contraseña">
+                            <input type="password" placeholder="Contraseña" required>
                         </div>
 
                         <div class="pass"><a href="#">¿Olvidó la contraseña?</a></div>
