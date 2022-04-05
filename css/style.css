@@ -469,4 +469,33 @@ h2 {
 
 .putin {
     width: 100%
+}.boric{
+    width: 1200px;
+    height: 350px;
+    margin-right: 30px;
+}
+.covid{
+    width: 1200px;
+    height: 350px;
+    margin-right: 30px;
+}
+@media(max-width:991px){
+    .Noticia.cl{
+        align-items: center;
+    }
+}
+h1{
+    width: 88%;
+}
+h2{
+    width: 88%;
+}
+p{
+    width: 88%;
+}
+.boric{
+    width: 88%;
+}
+.covid{
+    width: 88%;
 }
