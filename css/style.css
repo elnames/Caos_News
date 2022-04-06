@@ -444,7 +444,13 @@ fieldset {
 }
 
 
-/* html */
+/**********************************/
+
+
+/********** Noticieros ************/
+
+
+/**********************************/
 
 p,
 h1,
@@ -469,33 +475,42 @@ h2 {
 
 .putin {
     width: 100%
-}.boric{
+}
+
+.boric {
     width: 1200px;
     height: 350px;
     margin-right: 30px;
 }
-.covid{
+
+.covid {
     width: 1200px;
     height: 350px;
     margin-right: 30px;
 }
-@media(max-width:991px){
-    .Noticia.cl{
+
+@media(max-width:991px) {
+    .Noticia.cl {
         align-items: center;
     }
 }
-h1{
+
+h1 {
     width: 88%;
 }
-h2{
+
+h2 {
     width: 88%;
 }
-p{
+
+p {
     width: 88%;
 }
-.boric{
+
+.boric {
     width: 88%;
 }
-.covid{
+
+.covid {
     width: 88%;
 }
