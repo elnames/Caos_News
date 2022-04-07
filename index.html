@@ -92,7 +92,7 @@
     <!-- Fin nav bar -->
 
     <!-- Inicio carrusel -->
-    <div class="container mt-3">
+    <div class="container mt-3 ">
         <div class="row">
             <div class="col align-self-center">
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -118,6 +118,7 @@
 
                         <!-- 2da imagen Carousel -->
                         <div class="carousel-item ">
+                            <!-- redireccion a otra página -->
                             <a href="/html/noticieros.html#tema2">
                                 <img src="/media/noticia3.jpg " class="d-block w-100 borde respon" alt="... ">
                                 <div class="carousel-caption d-none d-md-block  ">
@@ -190,11 +191,11 @@
                     <!-- Noticias derecha -->
                     <div class="col-md-6 tn-right ">
                         <div class="img-news borde ">
-                            <img src="/media/noticia6.jpg " />
+                            <img src="/media/noticia6.jpg" />
                             <div class="contenido-news ">
                                 <div class="contenido-news-inner ">
                                     <a class="fecha-news "><i class="far fa-clock "></i>07-Abr-2022</a>
-                                    <a class="titulo-news " href="">Cuatro niños mueren en un bombardeo gubernamental en Siria</a>
+                                    <a class="titulo-news " href="/html/noticias.html#tema3">Cuatro niños mueren en un bombardeo gubernamental en Siria</a>
                                 </div>
                             </div>
                         </div>
@@ -208,7 +209,7 @@
     <!-- Fin 2 Noticias grandes-->
 
     <!-- Widget cripto -->
-    <div class="container mt-3 borde">
+    <div class="container mt-3">
         <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
         <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
     </div>
@@ -216,11 +217,9 @@
 
 
     <!-- Noticias pequeñas -->
-
     <div class="container">
-
         <h1 class="text-center pt-5">Noticias más vistas de la semana</h1>
-
+        <!--1era noticia  -->
         <div class="row mt-5 mb-2 resp ">
             <div class="col-6 col-md-4">
                 <div class="card bg-dark zoom mb-4" style="width: 18rem;">
@@ -235,6 +234,7 @@
                 </div>
             </div>
 
+            <!--2da noticia  -->
             <div class="col-6 col-md-4">
                 <div class="card bg-dark zoom mb-4" style="width: 18rem;">
                     <a href="/html/noticias.html">
@@ -248,6 +248,7 @@
                 </div>
             </div>
 
+            <!-- 3era noticia -->
             <div class="col-6 col-md-4">
                 <div class="card bg-dark zoom" style="width: 18rem;">
                     <a href="/html/noticieros.html#tema2">
@@ -281,25 +282,31 @@
                 </div>
                 <!-- Fin titulo contacto -->
 
+                <!-- Formulario -->
                 <form id="contact" action="" method="post">
                     <fieldset>
                         <input placeholder="Nombre" type="text" tabindex="1">
                     </fieldset>
+
                     <fieldset>
                         <input placeholder="Email" type="email" tabindex="2">
                     </fieldset>
+
                     <fieldset>
                         <input placeholder="Telefono" type="tel" tabindex="3">
                     </fieldset>
+
                     <fieldset>
                         <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
                     </fieldset>
+
                     <fieldset>
                         <div class="row button">
                             <input type="submit" value="Enviar">
 
                         </div>
                     </fieldset>
+
                 </form>
             </div>
         </div>
@@ -364,9 +371,7 @@
                         <span>Iniciar Sesión</span>
                     </div>
                     <!-- Fin titulo -->
-
                     <div class="btn_derecha"></div>
-
                     <!-- Formulario -->
                     <form>
                         <!-- Icono -->
