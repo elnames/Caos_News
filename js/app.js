@@ -1,20 +1,3 @@
-/* function validar() {
-
-    //Variable 
-    nombre = $('#nombre').val();
-
-    //Comprobación longitud caracteres
-    if (nombre.length >= 3 && nombre.length < 14) {
-        return true;
-    } else {
-        alert('Por favor, ingresa un minimo de 3 caracteres y máximo 13');
-        return false;
-
-    }
-
-} */
-
-
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
