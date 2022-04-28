@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos New </title>
+    <link rel="icon" href="media/logo1.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/efca2f5eea.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Inicio nav bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo2.png" alt="" width="260" height="50" class="d-inline-block"></a>
+            <!-- Logo -->
+
+            <!-- Boton responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Boton responsive -->
+
+            <div class="collapse navbar-collapse mid" id="navbarSupportedContent">
+                <!-- Items Izquierda -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mid">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <!-- Categorias -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="html/noticias.html">Ciencia</a></li>
+                            <li><a class="dropdown-item" href="">Deportes</a></li>
+                            <li><a class="dropdown-item" href="">Internacional</a></li>
+                            <li><a class="dropdown-item" href="">Viajes</a></li>
+                            <li><a class="dropdown-item" href="">Politica</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="">Periodistas</a></li>
+                            <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                        </ul>
+                    </li>
+                    <!-- Fin Categorias -->
+                </ul>
+                <!-- Fin items Izquierda -->
+
+                <!-- Items derecha -->
+                <form class="d-flex">
+                    <!-- Buscador -->
+                    <input class="form-control m-2  mt-2 " type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-secondary  h-25 mt-2  " type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                        </svg>
+                    </button>
+                    <!-- Fin Buscador -->
+
+                    <!-- Boton login -->
+                    <a data-bs-toggle="modal" href="#exampleModalToggle" class="pe-2 mt-1 ps-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle svg_login " width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path  stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle  cx="12" cy="12" r="9"/>
+                        <circle  cx="12" cy="10" r="3"/>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                      </svg>
+                    </a>
+                    <!-- Fin boton login -->
+                </form>
+                <!-- Fin items derecha -->
+            </div>
+        </div>
+    </nav>
+    <!-- Fin nav bar -->
+
+    <!-- Inicio carrusel -->
+    <div class="container mt-3 ">
+        <div class="row">
+            <div class="col align-self-center">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <!-- 1ra imagen Carousel -->
+
+                        <div class="carousel-item active">
+                            <a href="html/noticieros.html">
+                                <img src="media/noticia9.jpg " class="d-block w-100 borde respon " alt="... ">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Presidente Boric: </h5>
+                                    <p>inició su primera gira internacional en Argentina</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Fin 1ra imagen Carousel -->
+
+                        <!-- 2da imagen Carousel -->
+                        <div class="carousel-item ">
+                            <!-- redireccion a otra página -->
+                            <a href="html/noticieros.html#tema2">
+                                <img src="media/noticia3.jpg " class="d-block w-100 borde respon" alt="... ">
+                                <div class="carousel-caption d-none d-md-block  ">
+                                    <h5>Balance COVID-19:</h5>
+                                    <p> 4.148 casos nuevos y un 6,12% de positividad en las últimas 24 horas
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Fin 2da imagen Carousel -->
+
+                        <!-- 3ra imagen Carousel-->
+                        <div class="carousel-item ">
+                            <a href="html/noticias.html">
+                                <img src="media/noticia8.jpg " class="d-block w-100 borde respon" alt="... ">
+                                <div class="carousel-caption d-none d-md-block ">
+                                    <h5>Casa Blanca:</h5>
+                                    <p>"No hay planes" para que Biden y Putin hablen y cualquier conversación requeriría una "desescalada seria"</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Fin 3ra imagen Carousel -->
+                    </div>
+
+                    <!-- Boton Carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!-- Fin Boton Carousel -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin carrusel -->
+
+    <!-- Clima widget -->
+    <div class="container mt-3">
+        <div id="ww_9f1d746055984" v='1.20' loc='id' a='{"t":"responsive","lang":"es","ids":["wl2784"],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","cl_odd":"#FFFFFF17"}'><a href="https://weatherwidget.org/es/" id="ww_9f1d746055984_u" target="_blank">Widget de tiempo para el sitio web de Weatherwidget.org</a></div>
+        <script async src="https://srv2.weatherwidget.org/js/?id=ww_9f1d746055984"></script>
+    </div>
+    <!-- Fin clima widget -->
+
+    <!-- 2 Noticias grandes-->
+    <div class="container">
+        <div class="news ">
+            <div class="container ">
+                <div class="row ">
+                    <!-- Noticia izquierda -->
+                    <a href="html/noticieros.html">
+                        <div class="col news-left mb-3">
+                            <div class="img-news borde ">
+                                <img src="media/noticia1.jpg " />
+                                <div class="contenido-news ">
+                                    <div class="contenido-news-inner ">
+                                        <a class="fecha-news "><i class="far fa-clock "></i>07-Abr-2022</a>
+                                        <a class="titulo-news " href="html/noticias.html">Última hora de la guerra en Ucrania</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Fin Noticia izquierda -->
+
+                    <!-- Noticias derecha -->
+                    <div class="col-md-6 tn-right ">
+                        <div class="img-news borde ">
+                            <img src="media/noticia6.jpg" />
+                            <div class="contenido-news ">
+                                <div class="contenido-news-inner ">
+                                    <a class="fecha-news "><i class="far fa-clock "></i>07-Abr-2022</a>
+                                    <a class="titulo-news " href="html/noticias.html#tema3">Cuatro niños mueren en un bombardeo gubernamental en Siria</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Noticias derecha -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Fin 2 Noticias grandes-->
+
+    <!-- Widget cripto -->
+    <div class="container mt-3">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,3408,5426,52,74,7129,4687,11396" currency="CLP" theme="dark" transparent="false" show-symbol-logo="true"></div>
+    </div>
+    <!--Fin Widget cripto -->
+
+
+    <!-- Noticias pequeñas -->
+    <div class="container">
+        <h1 class="text-center pt-5">Noticias más vistas de la semana</h1>
+        <!--1era noticia  -->
+        <div class="row mt-5 mb-2 resp ">
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom mb-4" style="width: 18rem;">
+                    <a href="html/noticias.html">
+                        <img src="media/noticia5.jpg" class="card-img-top p-2 img-noticias " alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news text-center">La bofetada de Will Smith fue contra sí mismo</p>
+                            <p class="fs-p text-center"><i class="far fa-clock"></i> 07-Abr-2022</p>
+                            <p class="card-text fs-p text-center">La caída en picada de su carrera, todo Hollywood lo cancela.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--2da noticia  -->
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom mb-4" style="width: 18rem;">
+                    <a href="html/noticias.html">
+                        <img src="media/noticia4.jpg" class="card-img-top p-2 img-noticias " alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news text-center">La Guerra entre Rusia - Ucrania.</p>
+                            <p class="fs-p text-center"><i class="far fa-clock"></i> 07-Abr-2022</p>
+                            <p class="card-text fs-p text-center">Putin rechazó las acusaciones por la masacre en Bucha y denunció una “provocación grosera y cínica” de Ucrania</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3era noticia -->
+            <div class="col-6 col-md-4">
+                <div class="card bg-dark zoom" style="width: 18rem;">
+                    <a href="html/noticieros.html#tema2">
+                        <img src="media/noticia2.jpg" class="card-img-top p-2 img-noticias" alt="...">
+                        <div class="card-body">
+                            <p class="card-title fs-4 titulo-news text-center">¿cuáles son los síntomas de XE?</p>
+                            <p class="fs-p text-center"><i class="far fa-clock"></i> 07-Abr-2022</p>
+                            <p class="card-text fs-p text-center">XE es una cepa recombinante, lo que significa que está integrada de dos variantes previamente distintas.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fin noticias pequeñas  -->
+
+    <!-- Contacto-->
+    <a name="contacto">
+        <div class="container_contacto">
+            <div class="wrapper">
+                <!-- Titulo contacto -->
+                <div class="titulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                    <span>Contacto</span>
+                </div>
+                <!-- Fin titulo contacto -->
+
+                <!-- Formulario -->
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <input placeholder="Nombre" type="text" tabindex="1">
+                    </fieldset>
+
+                    <fieldset>
+                        <input placeholder="Email" type="email" tabindex="2">
+                    </fieldset>
+
+                    <fieldset>
+                        <input placeholder="Telefono" type="tel" tabindex="3">
+                    </fieldset>
+
+                    <fieldset>
+                        <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="row button">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </a>
+    <!-- Fin Contacto-->
+
+    <!-- Footer -->
+    <footer class="site-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 ">
+                    <h6>Sobre nosotros</h6>
+                    <p class="text-justify ">Caos news es un noticiero chileno de circulación matutina. En la actualidad es uno de los noticieros de mayor circulación en Chile, y nuestro sitio web es uno de los de mayor alcance a nivel de de chile.
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>Categorias</h6>
+                    <ul class="footer-links ">
+                        <li><a href="">Deportes</a></li>
+                        <li><a href="">Tecnología</a></li>
+                        <li><a href="">Política</a></li>
+                        <li><a href="">Internacional</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>Atajos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#contacto">Contactanos</a></li>
+                        <li><a href="">Periodistas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                    <p class="copyright-text ">Copyright &copy; 2022 Todos los derechos reservados por
+                        <a href="# ">CAOS NEWS</a>.
+                    </p>
+                </div>
+            </div>
+    </footer>
+    <!-- Fin footer -->
+
+
+    <!-- Login y Registro -->
+
+    <!-- Login -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="btn_derecha">
+                        <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- Titulo -->
+                    <div class="titulo">
+                        <span>Iniciar Sesión</span>
+                    </div>
+                    <!-- Fin titulo -->
+                    <div class="btn_derecha"></div>
+                    <!-- Formulario -->
+                    <form>
+                        <!-- Icono -->
+                        <div class="container">
+                            <div class="row mid">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="9" />
+                                    <circle cx="12" cy="10" r="3" />
+                                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Fin icono -->
+
+                        <div class="row"></div>
+                        <div class="row">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="Email" required>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="pass"><a href="#">¿Olvidó la contraseña?</a></div>
+
+                        <div class="row button">
+                            <input type="submit" value="Iniciar">
+                        </div>
+
+                        <div class="signup-link">
+                            ¿Nuevo usuario?
+                            <a class="register" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">¡Registrate ahora!</a>
+                        </div>
+                    </form>
+                    <!-- Fin formulario -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Login -->
+
+    <!-- Registro -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="btn_derecha">
+                        <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Titulo -->
+                    <div class="titulo">
+                        <span>Registro</span>
+                    </div>
+                    <!-- Fin titulo -->
+
+                    <div class="btn_derecha"></div>
+                    <!-- Formulario -->
+                    <form action="" class="formulario" id="formulario">
+                        <!-- Grupo: Nombre -->
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jordi Wild">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El nombre debe ser de 3 a 15 dígitos y solo puede contener letras.</p>
+                        </div>
+
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                            <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" placeholder="***********" id="password">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+
+                        <!-- Grupo: Teléfono -->
+                        <div class="formulario__grupo" id="grupo__telefono">
+                            <label for="telefono" class="formulario__label">Teléfono</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="56 9 8537 2998">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                        </div>
+
+                        <!-- Grupo: Terminos y Condiciones -->
+                        <div class="formulario__grupo" id="grupo__terminos">
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					            Acepto los Terminos y Condiciones
+				            </label>
+                        </div>
+
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+                    </form>
+                    <!-- Fin formulario -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registro -->
+
+    <!-- Fin Login y Registro -->
+
+
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
