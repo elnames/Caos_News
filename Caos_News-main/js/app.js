@@ -76,3 +76,30 @@ formulario.addEventListener('submit', (e) => {
 });
 
 console.log("La pagina ha cargado correctamente!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
