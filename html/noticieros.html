@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caos News</title>
     <link rel="icon" href="../media/logo1.png">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/efca2f5eea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/noticias.css">
 </head>
 
 <body>
@@ -71,17 +72,6 @@
                         </svg>
                     </button>
                     <!-- Fin Buscador -->
-
-                    <!-- Boton login -->
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="pe-2 mt-1 ps-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle svg_login " width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path  stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle  cx="12" cy="12" r="9"/>
-                        <circle  cx="12" cy="10" r="3"/>
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                      </svg>
-                    </a>
-                    <!-- Fin boton login -->
                 </form>
                 <!-- Fin items derecha -->
             </div>
@@ -92,10 +82,88 @@
 
 
     <!---inicio div container-->
-    <div class="container pt-4 pb-5">
+    <div class="container mt-4 ">
+        <div class="row align-items-center">
+            <article>
+                <header clas style="background-image: url('https://historia.uv.cl/images/001Gabriel-Boric-mundosputniknewscom_.jpg');">
+                    <div class="upper-header">
+                        <div class="mini-title">Articulo</div>
+                    </div>
+                    <div class="lower-header">
+                        <div class="tags-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<def    s>
+						<style>
+							.d {
+								width: 100px;
+								fill: #fff;
+								opacity: .75;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z" />
+				</svg>
+                            <span>Politica</span><span>Nacional</span>
+                        </div>
+                        <h1 class="title ">Presidente Boric inició su primera gira internacional en Argentina</h1>
+                        <p class="subtitle">El curioso debut internacional en la gira de Boric a Buenos Aires</p>
+                    </div>
+                </header>
+
+                <section class="summary text-light bg-dark">
+                    <div class="summary-item">
+                        <h5 class="item-title">Autor</h5>
+                        <p class="item-text"><span class="item-data">Emmanuel Gazmey</span> </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Visitas</h5>
+                        <p class="item-text"><span class="item-data">1288</span> Visitas</p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Ubicación</h5>
+                        <p class="item-text"><span class="item-data" id="dateData">Buenos aires</span></p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Fecha Publicación</h5>
+                        <p class="item-text"><span class="item-data" id="dateData">07-Abr-2022</span></p>
+                    </div>
+                </section>
+
+                <section class="main-article ">
+                    <div class="container bg-dark text-light borde  bg-opacity-75 border border-white ">
+                        <div class="row align-items-center">
+                            <h4 class="text-center">¡Ruta Internacional del presidente!</h4>
+                            <p>Este domingo el presidente, Gabriel Boric, dio inicio a su primera gira internacional en Argentina, acompañado de la ministra de Relaciones Exteriores, Antonia Urrejola; el ministro de Energía, Claudio Huepe; la ministra de
+                                Cultura, Julieta Brodsky; la ministra de Defensa, Maya Fernández; y de la Mujer, Antonia Orellana. Junto a ellos se integra una comitiva política encabezada por el presidente del Senado, Álvaro Elilzalde; y el presidente
+                                de la Cámara de Diputadas y Diputados, Raúl Soto.
+                            </p>
+                            <p>Además se suma el presidente de la comisión de Relaciones Exteriores de la Cámara Alta, Jaime Quintana; el senador oficialista, Juan Ignacio Latorre y el presidente de la UDI, Javier Macaya. Asimismo, a esta visita se integra
+                                el presidente de la Corte Suprema, Juan Eduardo Fuentes y una comitiva de empresarios conformada por el presidente de Icare, Lorenzo Gazmuri; el gerente general de Coopeuch, Rodrigo Silva; la jefa de Mujeres del Pacífico,
+                                Fernanda Vicente; la presidente ejecutiva de Sistema B Chile, Josefa Monge; y el presidente de la Asociación de Industrias Metalúrgicas y Metalmecánicas, Dante Arrigoni.</p>
+                            <p>
+                                Este lunes su jornada partió temprano, tomó desayuno en el Tower Hotel, donde se aloja con su extensa comitiva. Ahí, rompiendo el protocolo como se ha hecho costumbre, el Mandatario prefirió caminar hasta el monumento del libertador José San Martín, donde
+                                dejó una ofrenda floral para conmemorar un nuevo aniversario del Abrazo de Maipú.</p>
+
+                            <p>Antes de llegar a la actividad abordó su relación de complicidad con Fernández y aseguró que “ambos somos amantes de la literatura, de la música y tenemos un profundo respeto por nuestros pueblos hermanos, así es que creo que
+                                vamos a tener muy buenas relaciones”. Al recibirlo en la Casa Rosada, más tarde, su par trasandino le regalaría un vinilo de Charly García y una camiseta de Milovan Mirosevic, de Argentinos Juniors.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </article>
+        </div>
+
+
+
+
+
+
+
+
 
         <!--inicio titulo 1-->
-        <h1 class="mb-4">Presidente Boric inició su primera gira internacional en Argentina</h1>
+        <h1 class="mb-4">Balance COVID-19: 4.148 casos nuevos y un 6,12% de positividad en las últimas 24 horas</h1>
 
         <!--inicio imagen 1-->
         <img class="boric borde" src="../media/boric.png" align="center">
@@ -125,8 +193,10 @@
                 <p class="card-text">Ubicación: Buenos aires</p>
             </div>
         </div>
-
         <!--fin tema 1-->
+
+
+
         <a name="tema2">
             <!--inicio tema 2-->
             <h2 class="mt-5 pt-5 mb-4">Balance COVID-19: 4.148 casos nuevos y un 6,12% de positividad en las últimas 24 horas</h2>
@@ -156,10 +226,83 @@
                     <p class="card-text">Ubicación: Chile</p>
                 </div>
             </div>
-
         </a>
 
+    </div>
 
+
+
+    <div class="container pt-4 pb-5">
+        <div class="row align-items-center">
+            <article>
+                <header clas style="background-image: url('https://historia.uv.cl/images/001Gabriel-Boric-mundosputniknewscom_.jpg');">
+                    <div class="upper-header">
+                        <div class="mini-title">Articulo</div>
+                    </div>
+                    <div class="lower-header">
+                        <div class="tags-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+					<def    s>
+						<style>
+							.d {
+								width: 100px;
+								fill: #fff;
+								opacity: .75;
+							}
+						</style>
+					</defs>
+					<path class="d" d="M19.22,9.66L10.77,1.21c-.74-.74-1.86-1.21-2.97-1.21H1.67C.75,0,0,.75,0,1.67V7.8c0,1.11,.46,2.23,1.3,2.97l8.45,8.46c1,1,2.62,1,3.62,0l5.94-5.95c.93-.93,.93-2.6-.09-3.62ZM6.96,6.35c-.59,.59-1.56,.59-2.15,0-.59-.59-.59-1.56,0-2.15,.59-.59,1.56-.59,2.15,0,.59,.59,.59,1.56,0,2.15Z" />
+				</svg>
+                            <span>Politica</span><span>Nacional</span>
+                        </div>
+                        <h1 class="title ">Presidente Boric inició su primera gira internacional en Argentina</h1>
+                        <p class="subtitle">El curioso debut internacional en la gira de Boric a Buenos Aires</p>
+                    </div>
+                </header>
+
+                <section class="summary text-light bg-dark">
+                    <div class="summary-item">
+                        <h5 class="item-title">Autor</h5>
+                        <p class="item-text"><span class="item-data">Emmanuel Gazmey</span> </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Visitas</h5>
+                        <p class="item-text"><span class="item-data">1288</span> Visitas</p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Ubicación</h5>
+                        <p class="item-text"><span class="item-data" id="dateData">Buenos aires</span></p>
+                    </div>
+                    <div class="summary-item">
+                        <h5 class="item-title">Fecha Publicación</h5>
+                        <p class="item-text"><span class="item-data" id="dateData">07-Abr-2022</span></p>
+                    </div>
+                </section>
+
+                <section class="main-article ">
+                    <div class="container bg-dark text-light borde  bg-opacity-75 border border-white ">
+                        <div class="row align-items-center">
+                            <h4 class="text-center">¡Ruta Internacional del presidente!</h4>
+                            <p>Este domingo el presidente, Gabriel Boric, dio inicio a su primera gira internacional en Argentina, acompañado de la ministra de Relaciones Exteriores, Antonia Urrejola; el ministro de Energía, Claudio Huepe; la ministra de
+                                Cultura, Julieta Brodsky; la ministra de Defensa, Maya Fernández; y de la Mujer, Antonia Orellana. Junto a ellos se integra una comitiva política encabezada por el presidente del Senado, Álvaro Elilzalde; y el presidente
+                                de la Cámara de Diputadas y Diputados, Raúl Soto.
+                            </p>
+                            <p>Además se suma el presidente de la comisión de Relaciones Exteriores de la Cámara Alta, Jaime Quintana; el senador oficialista, Juan Ignacio Latorre y el presidente de la UDI, Javier Macaya. Asimismo, a esta visita se integra
+                                el presidente de la Corte Suprema, Juan Eduardo Fuentes y una comitiva de empresarios conformada por el presidente de Icare, Lorenzo Gazmuri; el gerente general de Coopeuch, Rodrigo Silva; la jefa de Mujeres del Pacífico,
+                                Fernanda Vicente; la presidente ejecutiva de Sistema B Chile, Josefa Monge; y el presidente de la Asociación de Industrias Metalúrgicas y Metalmecánicas, Dante Arrigoni.</p>
+                            <p>
+                                Este lunes su jornada partió temprano, tomó desayuno en el Tower Hotel, donde se aloja con su extensa comitiva. Ahí, rompiendo el protocolo como se ha hecho costumbre, el Mandatario prefirió caminar hasta el monumento del libertador José San Martín, donde
+                                dejó una ofrenda floral para conmemorar un nuevo aniversario del Abrazo de Maipú.</p>
+
+                            <p>Antes de llegar a la actividad abordó su relación de complicidad con Fernández y aseguró que “ambos somos amantes de la literatura, de la música y tenemos un profundo respeto por nuestros pueblos hermanos, así es que creo que
+                                vamos a tener muy buenas relaciones”. Al recibirlo en la Casa Rosada, más tarde, su par trasandino le regalaría un vinilo de Charly García y una camiseta de Milovan Mirosevic, de Argentinos Juniors.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </article>
+        </div>
     </div>
     <!---fin div container-->
 
@@ -204,6 +347,7 @@
             </div>
     </footer>
     <!-- Fin footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>

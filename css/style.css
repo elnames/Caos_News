@@ -58,6 +58,10 @@ a {
     }
 }
 
+.fondonegro {
+    background-color: #000;
+}
+
 
 /**********************************/
 
@@ -517,12 +521,6 @@ p {
 
 /* 
 -------------------------------------------------------- */
-
-.formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
 
 .formulario__label {
     display: block;
