@@ -38,6 +38,16 @@ a {
     font-size: 13px;
 }
 
+.buscador {
+    margin-left: 20rem;
+}
+
+@media (max-width:1100px) {
+    .buscador {
+        margin-left: 15rem;
+    }
+}
+
 @media (max-width: 991px) {
     .resp {
         display: block;

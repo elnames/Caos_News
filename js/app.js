@@ -1,3 +1,4 @@
+//API
 $(document).ready(
     function() {
         $.get("https://api.imgflip.com/get_memes", function(data) {
@@ -11,10 +12,7 @@ $(document).ready(
     });
 
 
-
-
-/* validacion registro */
-
+//VALIDACION REGISTRO
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
@@ -102,7 +100,5 @@ formulario.addEventListener('submit', (e) => {
 });
 
 
-
-
-
+//Log consola
 console.log("La pagina ha cargado correctamente!")
