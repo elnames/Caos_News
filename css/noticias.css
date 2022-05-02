@@ -235,9 +235,6 @@ body .main-article .gallery .mask-off img {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-        padding: 50px;
-    }
     body article header .lower-header .subtitle {
         width: 100%;
     }
@@ -259,9 +256,6 @@ body .main-article .gallery .mask-off img {
 }
 
 @media screen and (max-width: 425px) {
-    body {
-        padding: 25px;
-    }
     body article header .upper-header .date-since {
         display: none;
     }

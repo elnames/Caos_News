@@ -6,7 +6,8 @@ $(document).ready(
                 $("#tabla").append("<tr><td>" + item.id +
                     "</td><td>" + item.name +
                     "</td><td><img src =" + item.url +
-                    " ></td></tr>");
+                    " ></td><td>" + item.width + 'x' + item.height +
+                    "</td></tr>");
             })
         })
     });
@@ -55,9 +56,9 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
         campos[campo] = true;
-        document.getElementById("enviar").disabled = false;
         document.getElementById("enviar").style.cursor = "pointer"
         document.getElementById("enviar").style.opacity = "1"
+        document.getElementById("enviar").disabled = false;
 
 
     } else {
@@ -67,9 +68,9 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
         campos[campo] = false;
-        document.getElementById("enviar").disabled = true;
         document.getElementById("enviar").style.cursor = "not-allowed"
         document.getElementById("enviar").style.opacity = "0.5"
+        document.getElementById("enviar").disabled = true;
     }
 }
 
@@ -81,7 +82,6 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const terminos = document.getElementById('terminos');
     if (campos.nombre && campos.password && campos.correo && campos.telefono) {
         formulario.reset();
 
