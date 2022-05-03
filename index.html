@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <!-- Inicio nav bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -55,6 +54,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="html/api.html">API</a></li>
+                            <li><a class="dropdown-item" href="">Periodistas</a></li>
                             <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
                         </ul>
                     </li>
@@ -285,30 +285,61 @@
                 <!-- Fin titulo contacto -->
 
                 <!-- Formulario -->
-                <form id="contact" action="">
-                    <fieldset>
-                        <input placeholder="Nombre" type="text" tabindex="1">
-                    </fieldset>
+                <div class="content container_contact">
+                    <div class="contact-wrapper">
+                        <div class="contact form ">
 
-                    <fieldset>
-                        <input placeholder="Email" type="email" tabindex="2">
-                    </fieldset>
+                            <form action="" class="contacto" id="contacto">
 
-                    <fieldset>
-                        <input placeholder="Telefono" type="tel" tabindex="3">
-                    </fieldset>
+                                <div class="contacto__grupo" id="grupo__nombreC">
+                                    <p>
+                                        <label class="label_contacto col-lg-3 col-md-3">Nombre</label>
+                                        <input class="nombre col-lg-9 col-md-6 contacto__input" type="text" name="nombreC" id="nombreC">
+                                        <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                                        <p class="contacto__input-error">El nombre debe ser de 3 a 15 caracteres y solo puede contener letras.</p>
 
-                    <fieldset>
-                        <textarea placeholder="Escribe tu mensaje aquí..." tabindex="5"></textarea>
-                    </fieldset>
+                                    </p>
+                                </div>
+                                <div class="contacto__grupo" id="grupo__correoC">
+                                    <p>
+                                        <label class="label_contacto col-lg-3 col-md-3">Correo electronico</label>
+                                        <input class="email col-lg-9 col-md-6 contacto__input" type="email" name="correoC" id="correoC">
 
-                    <fieldset>
-                        <div class="row button">
-                            <input type="submit" value="Enviar">
+                                        <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                                        <p class="contacto__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+
+                                    </p>
+                                </div>
+                                <div class="contacto__grupo" id="grupo__telefonoC">
+                                    <p>
+                                        <label class="label_contacto col-lg-3 col-md-3">Numero de telefono</label>
+                                        <input class="telefono col-lg-9 col-md-6 contacto__input" type="text" name="telefonoC" id="telefonoC">
+
+                                        <i class="contacto__validacion-estado fas fa-times-circle"></i>
+                                        <p class="contacto__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+
+                                    </p>
+                                </div>
+                                <div class="contacto__grupo" id="grupo__comentario">
+                                    <p class="block">
+                                        <label class="label_contacto col-lg-3 col-md-3">Comentario</label>
+                                        <textarea class="comentario col-lg-9 col-md-6" name="" rows="3"></textarea>
+                                    </p>
+                                </div>
+                                <div class="contacto__grupo  contacto__grupo-btn-enviar">
+                                    <p class="block row button">
+                                        <p class="contacto__mensaje-exito text-center" id="contacto__mensaje-exito">Mensaje enviado exitosamente!</p>
+                                        <button type="submit" class="contacto__btn" id="enviarC" disabled>
+                                        Enviar
+                                    </button>
+                                    </p>
+                                </div>
+                            </form>
                         </div>
-                    </fieldset>
 
-                </form>
+                    </div>
+
+                </div>
             </div>
         </div>
     </a>
@@ -417,6 +448,7 @@
     </div>
     <!-- Fin Login -->
 
+
     <!-- Registro -->
     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -425,13 +457,13 @@
                     <div class="btn_derecha">
                         <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
                     <!-- Titulo -->
                     <div class="titulo">
                         <span>Registro</span>
                     </div>
-                    <div class="btn_derecha"></div>
+                    <!-- Fin titulo -->
 
+                    <div class="btn_derecha"></div>
                     <!-- Formulario -->
                     <form action="" class="formulario" id="formulario">
                         <!-- Grupo: Nombre -->
@@ -443,6 +475,7 @@
                             </div>
                             <p class="formulario__input-error">El nombre debe ser de 3 a 15 caracteres y solo puede contener letras.</p>
                         </div>
+
                         <!-- Grupo: Contraseña -->
                         <div class="formulario__grupo" id="grupo__password">
                             <label for="password" class="formulario__label">Contraseña</label>
@@ -483,19 +516,24 @@
                             <p class="formulario__mensaje-exito text-center" id="formulario__mensaje-exito">Registrado exitosamente!</p>
                             <button type="submit" class="formulario__btn" id="enviar" disabled>Enviar</button>
                         </div>
+
                     </form>
+                    <!-- Fin formulario -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Fin Login y Registro -->
+    <!-- Registro -->
 
+    <!-- Fin Login y Registro -->
 
 
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
 </body>
 
 </html>

@@ -13,6 +13,7 @@ $(document).ready(
     });
 
 
+
 //VALIDACION REGISTRO
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
@@ -56,9 +57,9 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
         campos[campo] = true;
+        document.getElementById("enviar").disabled = false;
         document.getElementById("enviar").style.cursor = "pointer"
         document.getElementById("enviar").style.opacity = "1"
-        document.getElementById("enviar").disabled = false;
 
 
     } else {
@@ -68,9 +69,9 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
         campos[campo] = false;
+        document.getElementById("enviar").disabled = true;
         document.getElementById("enviar").style.cursor = "not-allowed"
         document.getElementById("enviar").style.opacity = "0.5"
-        document.getElementById("enviar").disabled = true;
     }
 }
 
@@ -99,6 +100,76 @@ formulario.addEventListener('submit', (e) => {
     }
 });
 
+
+// validacion contacto
+
+const contacto = document.getElementById('contacto');
+const input = document.querySelectorAll('#contacto input');
+
+
+const campos_contacto = {
+    nombreC: false,
+    correoC: false,
+    telefonoC: false
+}
+
+const validarFormContacto = (x) => {
+    switch (x.target.name) {
+        case "nombreC":
+            validarCampos_contacto(expresiones.nombre, x.target, 'nombreC');
+            break;
+        case "correoC":
+            validarCampos_contacto(expresiones.correo, x.target, 'correoC');
+            break;
+        case "telefonoC":
+            validarCampos_contacto(expresiones.telefono, x.target, 'telefonoC');
+            break;
+    }
+}
+
+const validarCampos_contacto = (expresion, input, campoC) => {
+    if (expresion.test(input.value)) {
+        document.getElementById(`grupo__${campoC}`).classList.remove('contacto__grupo-incorrecto');
+        document.getElementById(`grupo__${campoC}`).classList.add('contacto__grupo-correcto');
+        document.querySelector(`#grupo__${campoC} .contacto__input-error`).classList.remove('contacto__input-error-activo');
+        campos_contacto[campoC] = true;
+        document.getElementById("enviarC").disabled = false;
+        document.getElementById("enviarC").style.opacity = "1"
+
+    } else {
+        document.getElementById(`grupo__${campoC}`).classList.add('contacto__grupo-incorrecto');
+        document.getElementById(`grupo__${campoC}`).classList.remove('contacto__grupo-correcto');
+        document.querySelector(`#grupo__${campoC} .contacto__input-error`).classList.add('contacto__input-error-activo');
+        campos_contacto[campoC] = false;
+        document.getElementById("enviarC").disabled = true;
+        document.getElementById("enviarC").style.opacity = "0.5"
+    }
+}
+
+input.forEach((input) => {
+    input.addEventListener('keyup', validarFormContacto);
+    input.addEventListener('blur', validarFormContacto);
+});
+
+contacto.addEventListener('submit', (x) => {
+    e.preventDefault();
+
+    if (campos_contacto.nombre && campos_contacto.correo && campos_contacto.telefono) {
+        formulario.reset();
+
+        document.getElementById('contacto__mensaje-exito').classList.add('contacto__mensaje-exito-activo');
+        setTimeout(() => {
+            document.getElementById('contacto__mensaje-exito').classList.remove('contacto__mensaje-exito-activo');
+
+        }, 5000);
+
+        document.querySelectorAll('.contacto__grupo-correcto').forEach((icono) => {
+            icono.classList.remove('contacto__grupo-correcto');
+        });
+    } else {
+        document.getElementById('contacto__mensaje').classList.add('contacto__mensaje-activo');
+    }
+});
 
 //Log consola
 console.log("La pagina ha cargado correctamente!")
